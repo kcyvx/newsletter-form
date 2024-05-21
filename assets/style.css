@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.global-container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: #36384D;
+    justify-content: center;
+    font-family: 'Roboto';
+}
+
+.container {
+    width: 900px;
+    height: 600px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    display: flex;
+    transition: all .7s;
+}
+
+.left {
+    width: 50%;
+    padding: 70px;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: 3em;
+}
+
+.txt {
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #FF6155;
+    background-image: url(./IMG/Path\ 2.svg);
+    background-size: 7px;
+    background-position: center;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+
+.right {
+    padding: 20px;
+    width: 50%;
+    overflow: hidden;
+}
+
+.content-right {
+    background-color: #FF6155;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.content-right img {
+    border-radius: 25px;
+    object-fit: cover;
+    width: 100%;
+}
+
+label {
+    font-size: 11px;
+}
+
+input[type=email] {
+    padding: 14px;
+    margin-top: 10px;
+    outline: none;
+    border-radius: 7px;
+    border: 1px solid #000;
+}
+
+input[type=submit] {
+    padding: 14px;
+    margin-top: 17px;
+    background-color: #242742;
+    color: #fff;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background: linear-gradient(#FF6155, #ff5a66);
+    box-shadow: -8px 10px 10px -5px #FF6155;
+}
+
+/* validation*/
+
+.validation {
+    width: 520px;
+    height: 520px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 25px;
+    padding: 40px 70px;
+    transition: all .7s;
+    opacity: 1;
+}
+
+.validation-check {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(#ff5a66, #FF6155);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.validation-check img {
+    width: 25px;
+}
+
+h2 {
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #242742;
+    color: #fff;
+    width: 100%;
+    padding: 17px 0;
+    margin-top: 117px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(#FF6155, #ff5a66);
+    box-shadow: -8px 10px 10px -5px #FF6155;
+}
+
+.hidden {
+    opacity: 0;
+}
+.erreur-msg{
+    color: red;
+    transition: all .2s;
+    margin-top: 5px;
+}
+.hidden-txt{
+    opacity: 0;
+    transition: all .2s;
+}
